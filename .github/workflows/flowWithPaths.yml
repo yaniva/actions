@@ -5,7 +5,7 @@ on:
   push:
     branches: '**/**'  
     paths:
-      - 'deps.txt'
+      - 'a/deps.txt'
 
 jobs:
   print-tag:
