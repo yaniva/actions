@@ -1,0 +1,16 @@
+name: testing paths
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: '**/**'  
+    paths:
+      - 'deps.txt'
+
+jobs:
+  print-tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print commit url
+        run: echo commit url is ${{ github.event.head_commit.url }}
